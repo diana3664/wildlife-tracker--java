@@ -13,7 +13,7 @@ public class AnimalTest {
 
     //instance of class Animal test
     @Test
-            public void Animal_instantiateCorrectly_true(){
+    public void Animal_instantiateCorrectly_true(){
         Animal testAnimal = new Animal ("Zebra");
         assertEquals(true, testAnimal instanceof Animal);
     }
@@ -73,4 +73,10 @@ public class AnimalTest {
         secondAnimal.save();
         assertEquals(Animal.find(secondAnimal.getId()), secondAnimal);
     }
+    @Test
+    public void find_returnsNullWhenNoAnimalFound_null() {
+        assertTrue(Animal.find(999) == null);
+    }
+
+
 }

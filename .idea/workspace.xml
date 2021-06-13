@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72e12c16-6c45-4d29-92bb-e02424724d11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/SightingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Sighting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sighting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AnimalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DatabaseRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DatabaseRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SightingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SightingTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,81 +66,51 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SightingTest.Animal_instantiateCorrectly_true">
-    <configuration name="AnimalTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;AnimalTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="AnimalTest.all_returnsAllInstancesOfAnimal_true" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;AnimalTest.all_returnsAllInstancesOfAnimal_true&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="AnimalTest.save_insertsObjectIntoDatabase_Animal" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;AnimalTest.save_insertsObjectIntoDatabase_Animal&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="AnimalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SightingTest">
+    <configuration name="SightingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wild-life-tracker.test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AnimalTest" />
+      <option name="MAIN_CLASS_NAME" value="SightingTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SightingTest.Animal_instantiateCorrectly_true" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SightingTest.all_returnsAllInstancesOfMonster_true" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wild-life-tracker.test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SightingTest" />
-      <option name="METHOD_NAME" value="Animal_instantiateCorrectly_true" />
+      <option name="METHOD_NAME" value="all_returnsAllInstancesOfMonster_true" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SightingTest.all_returnsAllInstancesOfSighting_true" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wild-life-tracker.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SightingTest" />
+      <option name="METHOD_NAME" value="all_returnsAllInstancesOfSighting_true" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SightingTest.find_returnsSightingWithSameId_secondSighting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wild-life-tracker.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SightingTest" />
+      <option name="METHOD_NAME" value="find_returnsSightingWithSameId_secondSighting" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SightingTest.save_insertsObjectIntoDatabase_Sighting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wild-life-tracker.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SightingTest" />
+      <option name="METHOD_NAME" value="save_insertsObjectIntoDatabase_Sighting" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SightingTest.Animal_instantiateCorrectly_true" />
-        <item itemvalue="JUnit.AnimalTest" />
-        <item itemvalue="Gradle.AnimalTest" />
-        <item itemvalue="Gradle.AnimalTest.all_returnsAllInstancesOfAnimal_true" />
-        <item itemvalue="Gradle.AnimalTest.save_insertsObjectIntoDatabase_Animal" />
+        <item itemvalue="JUnit.SightingTest" />
+        <item itemvalue="JUnit.SightingTest.all_returnsAllInstancesOfSighting_true" />
+        <item itemvalue="JUnit.SightingTest.save_insertsObjectIntoDatabase_Sighting" />
+        <item itemvalue="JUnit.SightingTest.find_returnsSightingWithSameId_secondSighting" />
+        <item itemvalue="JUnit.SightingTest.all_returnsAllInstancesOfMonster_true" />
       </list>
     </recent_temporary>
   </component>

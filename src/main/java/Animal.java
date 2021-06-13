@@ -16,6 +16,12 @@ public class Animal {
         return name;
     }
 
+    public int getId() {
+        return id;
+    }
+//getid
+
+
     //are the same
     @Override
     public boolean equals(Object o) {
@@ -38,18 +44,30 @@ public class Animal {
     //saving to databaseRule
     public void save() {
         try(Connection con = DB.sql2o.open()) {
-            String sql = "INSERT INTO animals (name) VALUES (:name)";
-            con.createQuery(sql)
+            String sql = "INSERT INTO animals (name) VALUES (:name);";
+            this.id = (int) con.createQuery(sql, true)
                     .addParameter("name", this.name)
-                    .executeUpdate();
+                    .executeUpdate()
+                    .getKey();
         }
     }
 
     // our save() returns all() when called apon
     public static List<Animal> all() {
-        String sql = "SELECT * FROM animals";
+        String sql = "SELECT * FROM animals;";
         try(Connection con = DB.sql2o.open()) {
             return con.createQuery(sql).executeAndFetch(Animal.class);
+        }
+    }
+
+    //find animal based on id find()
+    public static Animal find(int id) {
+        try(Connection con = DB.sql2o.open()) {
+            String sql = "SELECT * FROM animals where id=:id";
+            Animal animal = con.createQuery(sql)
+                    .addParameter("id", id)
+                    .executeAndFetchFirst(Animal.class);
+            return animal;
         }
     }
 }

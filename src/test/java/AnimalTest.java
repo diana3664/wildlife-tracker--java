@@ -7,6 +7,7 @@ public class AnimalTest {
 
 
     //rule created after creating a DATAbaseRule
+    @Rule
     public DatabaseRule database = new DatabaseRule();
 
 
@@ -38,7 +39,9 @@ public class AnimalTest {
     public void save_insertsObjectIntoDatabase_Animal() {
         Animal testAnimal = new Animal ("Zebra");
         testAnimal.save();
-        assertTrue(Animal.all().get(0).equals(testAnimal));
+        Animal savedAnimal = Animal.all().get(0);
+
+        assertEquals(testAnimal.getId(), savedAnimal.getId());
     }
 
     // our save() returns all() when called apon
@@ -52,4 +55,22 @@ public class AnimalTest {
         assertEquals(true, Animal.all().get(1).equals(secondAnimal));
     }
 
+    //get an id of Animal
+    @Test
+    public void save_assignsIdToObject() {
+        Animal testAnimal = new Animal ("Zebra");
+        testAnimal.save();
+        Animal savedAnimal = Animal.all().get(0);
+        assertEquals(testAnimal.getId(), savedAnimal.getId());
+    }
+
+    //find a animal based on id
+    @Test
+    public void find_returnsPersonWithSameId_secondPerson() {
+        Animal testAnimal = new Animal ("Zebra");
+        testAnimal.save();
+        Animal secondAnimal = new Animal ("Lion");
+        secondAnimal.save();
+        assertEquals(Animal.find(secondAnimal.getId()), secondAnimal);
+    }
 }

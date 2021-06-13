@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72e12c16-6c45-4d29-92bb-e02424724d11" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Animal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/AnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AnimalTest.java" afterDir="false" />
@@ -16,6 +17,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -32,7 +43,7 @@
   <component name="PropertiesComponent">
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Groovy JUnit" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="Animal" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -54,13 +65,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.AnimalTest.all_returnsAllInstancesOfPerson_true">
-    <configuration name="AnimalTest.Animal_areEqual_true" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="JUnit.AnimalTest">
+    <configuration name="AnimalTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;AnimalTest.Animal_areEqual_true&quot;" />
+        <option name="scriptParameters" value="--tests &quot;AnimalTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -75,12 +86,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AnimalTest.Animal_instantiateCorrectly_true" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AnimalTest.all_returnsAllInstancesOfAnimal_true" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;AnimalTest.Animal_instantiateCorrectly_true&quot;" />
+        <option name="scriptParameters" value="--tests &quot;AnimalTest.all_returnsAllInstancesOfAnimal_true&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -95,32 +106,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AnimalTest.Animal_returnsNameCorrectly_true" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AnimalTest.save_assignsIdToObject" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;AnimalTest.Animal_returnsNameCorrectly_true&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="AnimalTest.all_returnsAllInstancesOfPerson_true" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;AnimalTest.all_returnsAllInstancesOfPerson_true&quot;" />
+        <option name="scriptParameters" value="--tests &quot;AnimalTest.save_assignsIdToObject&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -155,13 +146,22 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="AnimalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wild-life-tracker.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AnimalTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AnimalTest.all_returnsAllInstancesOfPerson_true" />
+        <item itemvalue="JUnit.AnimalTest" />
+        <item itemvalue="Gradle.AnimalTest" />
+        <item itemvalue="Gradle.AnimalTest.all_returnsAllInstancesOfAnimal_true" />
         <item itemvalue="Gradle.AnimalTest.save_insertsObjectIntoDatabase_Animal" />
-        <item itemvalue="Gradle.AnimalTest.Animal_areEqual_true" />
-        <item itemvalue="Gradle.AnimalTest.Animal_returnsNameCorrectly_true" />
-        <item itemvalue="Gradle.AnimalTest.Animal_instantiateCorrectly_true" />
+        <item itemvalue="Gradle.AnimalTest.save_assignsIdToObject" />
       </list>
     </recent_temporary>
   </component>

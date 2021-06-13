@@ -33,12 +33,23 @@ public class AnimalTest {
         assertTrue(testAnimal.equals(secondAnimal));
     }
 
-    //save animal in database
+    //save animal in database save()
     @Test
     public void save_insertsObjectIntoDatabase_Animal() {
         Animal testAnimal = new Animal ("Zebra");
         testAnimal.save();
         assertTrue(Animal.all().get(0).equals(testAnimal));
+    }
+
+    // our save() returns all() when called apon
+    @Test
+    public void all_returnsAllInstancesOfAnimal_true() {
+        Animal testAnimal = new Animal ("Zebra");
+        testAnimal.save();
+        Animal secondAnimal = new Animal ("Lion");
+        secondAnimal.save();
+        assertEquals(true, Animal.all().get(0).equals(testAnimal));
+        assertEquals(true, Animal.all().get(1).equals(secondAnimal));
     }
 
 }

@@ -1,5 +1,8 @@
 import org.sql2o.Connection;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Animal {
     private String name;
     private int id;
@@ -39,6 +42,14 @@ public class Animal {
             con.createQuery(sql)
                     .addParameter("name", this.name)
                     .executeUpdate();
+        }
+    }
+
+    // our save() returns all() when called apon
+    public static List<Animal> all() {
+        String sql = "SELECT * FROM animals";
+        try(Connection con = DB.sql2o.open()) {
+            return con.createQuery(sql).executeAndFetch(Animal.class);
         }
     }
 }

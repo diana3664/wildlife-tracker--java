@@ -1,6 +1,4 @@
-
-
-
+import org.sql2o.Connection;
 
 public class Animal {
     private String name;
@@ -16,8 +14,6 @@ public class Animal {
     }
 
     //are the same
-
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -34,5 +30,15 @@ public class Animal {
         int result = getName().hashCode();
         result = 31 * result + id;
         return result;
+    }
+
+    //saving to databaseRule
+    public void save() {
+        try(Connection con = DB.sql2o.open()) {
+            String sql = "INSERT INTO animals (name) VALUES (:name)";
+            con.createQuery(sql)
+                    .addParameter("name", this.name)
+                    .executeUpdate();
+        }
     }
 }

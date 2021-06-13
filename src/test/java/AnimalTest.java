@@ -6,6 +6,10 @@ import static org.junit.Assert.*;
 public class AnimalTest {
 
 
+    //rule created after creating a DATAbaseRule
+    public DatabaseRule database = new DatabaseRule();
+
+
     //instance of class Animal test
     @Test
             public void Animal_instantiateCorrectly_true(){

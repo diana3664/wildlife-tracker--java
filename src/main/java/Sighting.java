@@ -15,6 +15,7 @@ public class Sighting {
         this.id = id;
     }
 
-
-
+    public String getName() {
+        return ranger_name;
+    }
 }

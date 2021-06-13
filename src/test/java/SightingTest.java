@@ -9,10 +9,18 @@ public class SightingTest {
 
     //instance of class sighting test
     @Test
-    public void Animal_instantiateCorrectly_true(){
+    public void Sighting_instantiateCorrectly_true(){
         Animal testAnimal = new Animal("Deer");
         testAnimal.save();
         Sighting testSighting = new Sighting(testAnimal.getId(), "Zone B", "James Wait");
         assertEquals(true, testSighting  instanceof Sighting);
+    }
+
+    @Test
+    public void Sighting_returnsNameO_RangerName(){
+        Animal testAnimal = new Animal("Deer");
+        testAnimal.save();
+        Sighting testSighting = new Sighting(testAnimal.getId(), "Zone B", "James Wait");
+        assertEquals("James Wait", testSighting.getName());
     }
 }

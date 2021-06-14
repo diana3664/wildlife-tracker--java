@@ -26,6 +26,7 @@ public class App {
             Map<String, Object> model = new HashMap<String, Object>();
             model.put("animals", Animal.all());
             model.put("endangeredAnimals", Endengered.all());
+
             return new ModelAndView(model, "index.hbs");
         }, new HandlebarsTemplateEngine());
 

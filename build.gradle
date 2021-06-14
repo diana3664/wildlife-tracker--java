@@ -15,6 +15,7 @@ dependencies {
     implementation group: 'com.sparkjava', name: 'spark-core', version: '2.3'
     testImplementation  group: 'junit', name: 'junit', version: '4.12'
     implementation "com.sparkjava:spark-template-handlebars:2.5.5"
+    implementation 'org.slf4j:slf4j-simple:1.7.21'
     implementation group: 'org.sql2o', name: 'sql2o', version: '1.5.4'
     implementation group: 'org.postgresql', name: 'postgresql', version: "9.4-1201-jdbc41"
 }

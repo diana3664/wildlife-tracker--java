@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72e12c16-6c45-4d29-92bb-e02424724d11" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/animal.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Endengered.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Endengered.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EndengeredDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EndengeredDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AnimalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/EndengeredTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EndengeredTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,6 +58,9 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="Animal" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -69,7 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AnimalTest.save_recordsTimeOfCreationInDatabase">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="wild-life-tracker.main" />
@@ -96,21 +101,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EndengeredTest.monster_instantiatesWithHalfFullPlayLevel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EndengeredTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wild-life-tracker.test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="EndengeredTest" />
-      <option name="METHOD_NAME" value="monster_instantiatesWithHalfFullPlayLevel" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EndengeredTest.save_assignsIdAndSavesObjectToDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EndengeredTest.getHealth_returnsHealthy_true" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wild-life-tracker.test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="EndengeredTest" />
-      <option name="METHOD_NAME" value="save_assignsIdAndSavesObjectToDatabase" />
+      <option name="METHOD_NAME" value="getHealth_returnsHealthy_true" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -118,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AnimalTest.save_recordsTimeOfCreationInDatabase" />
-        <item itemvalue="JUnit.AnimalTest" />
-        <item itemvalue="JUnit.EndengeredTest.monster_instantiatesWithHalfFullPlayLevel" />
         <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.EndengeredTest.save_assignsIdAndSavesObjectToDatabase" />
+        <item itemvalue="JUnit.EndengeredTest.getHealth_returnsHealthy_true" />
+        <item itemvalue="JUnit.EndengeredTest" />
+        <item itemvalue="JUnit.AnimalTest" />
+        <item itemvalue="JUnit.AnimalTest.save_recordsTimeOfCreationInDatabase" />
       </list>
     </recent_temporary>
   </component>
@@ -151,5 +155,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/wild_life_tracker$EndengeredTest_getHealth_returnsHealthy_true.ic" NAME="EndengeredTest.getHealth_returnsHealthy_true Coverage Results" MODIFIED="1623693682728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

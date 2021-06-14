@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72e12c16-6c45-4d29-92bb-e02424724d11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/layout.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Endengered.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Endengered.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EndengeredDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EndengeredDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AnimalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EndengeredTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EndengeredTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +69,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="JUnit.AnimalTest.save_recordsTimeOfCreationInDatabase">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="wild-life-tracker.main" />
@@ -78,30 +77,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EndengeredTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AnimalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wild-life-tracker.test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EndengeredTest" />
+      <option name="MAIN_CLASS_NAME" value="AnimalTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EndengeredTest.getHealth_returnsHealthAttribute_true" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AnimalTest.save_recordsTimeOfCreationInDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wild-life-tracker.test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EndengeredTest" />
-      <option name="METHOD_NAME" value="getHealth_returnsHealthAttribute_true" />
+      <option name="MAIN_CLASS_NAME" value="AnimalTest" />
+      <option name="METHOD_NAME" value="save_recordsTimeOfCreationInDatabase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EndengeredTest.getHealth_returnsHealthy_true" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EndengeredTest.monster_instantiatesWithHalfFullPlayLevel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wild-life-tracker.test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="EndengeredTest" />
-      <option name="METHOD_NAME" value="getHealth_returnsHealthy_true" />
+      <option name="METHOD_NAME" value="monster_instantiatesWithHalfFullPlayLevel" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AnimalTest.save_recordsTimeOfCreationInDatabase" />
+        <item itemvalue="JUnit.AnimalTest" />
+        <item itemvalue="JUnit.EndengeredTest.monster_instantiatesWithHalfFullPlayLevel" />
         <item itemvalue="Application.App" />
         <item itemvalue="JUnit.EndengeredTest.save_assignsIdAndSavesObjectToDatabase" />
-        <item itemvalue="JUnit.EndengeredTest.getHealth_returnsHealthy_true" />
-        <item itemvalue="JUnit.EndengeredTest.getHealth_returnsHealthAttribute_true" />
-        <item itemvalue="JUnit.EndengeredTest" />
       </list>
     </recent_temporary>
   </component>

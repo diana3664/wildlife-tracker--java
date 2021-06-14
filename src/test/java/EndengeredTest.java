@@ -31,6 +31,11 @@ public class EndengeredTest {
          assertEquals(testEndangeredAnimal.getId(), savedEndangeredAnimal.getId());
      }
 
-
+//testing constants
+@Test
+public void monster_instantiatesWithHalfFullPlayLevel(){
+    Endengered testEndangeredAnimal = new Endengered("Fox", "Healthy", "Young");
+    assertEquals(testEndangeredAnimal.getHealth(), (Endengered.HEALTH_1));
+}
 
    }

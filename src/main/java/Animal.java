@@ -1,11 +1,13 @@
-import org.sql2o.Connection;
+import org.sql2o.*;
+import java.sql.Timestamp;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Animal {
+public class Animal implements EndengeredDao{
     private String name;
     private int id;
+    private Timestamp timeSeen;
 
     public Animal (String name){
         this.name = name;
@@ -15,12 +17,17 @@ public class Animal {
     public String getName() {
         return name;
     }
-
+    //getid
     public int getId() {
         return id;
     }
-//getid
 
+    //get time
+
+
+    public Timestamp getTimeSeen() {
+        return timeSeen;
+    }
 
     //are the same
     @Override
@@ -44,7 +51,7 @@ public class Animal {
     //saving to databaseRule
     public void save() {
         try(Connection con = DB.sql2o.open()) {
-            String sql = "INSERT INTO animals (name) VALUES (:name);";
+            String sql = "INSERT INTO animals (name,timeSeen) VALUES (:name, now());";
             this.id = (int) con.createQuery(sql, true)
                     .addParameter("name", this.name)
                     .executeUpdate()

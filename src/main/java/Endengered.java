@@ -8,11 +8,20 @@ public class Endengered {
     private String health;
     private String age;
 
+    //constants
+    public static final String HEALTH_1 = "Healthy";
+    public static final String HEALTH_2 = "Okay";
+    public static final String HEALTH_3 = "Ill";
+
+
     public Endengered(String name, String health, String age) {
         this.name = name;
         this.id = id;
         this.health = health;
         this.age = age;
+        this.health = HEALTH_1;
+        this.health = HEALTH_2;
+        this.health = HEALTH_3;
     }
 
     public String getHealth() {

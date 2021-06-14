@@ -1,5 +1,7 @@
 import org.junit.*;
 import static org.junit.Assert.*;
+import java.sql.Timestamp;
+import java.util.Date;
 
 
 
@@ -78,5 +80,13 @@ public class AnimalTest {
         assertTrue(Animal.find(999) == null);
     }
 
-
+//timestamp
+    @Test
+    public void save_recordsTimeOfCreationInDatabase() {
+        Animal testAnimal = new Animal ("Zebra");
+        testAnimal.save();
+    Timestamp savedAnimalTimeSeen = Animal.find(testAnimal.getId()).getTimeSeen();
+    Timestamp rightNow = new Timestamp(new Date().getTime());
+    assertEquals(rightNow.getDay(), savedAnimalTimeSeen.getDay());
+   }
 }

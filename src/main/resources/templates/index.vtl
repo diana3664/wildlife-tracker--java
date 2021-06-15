@@ -9,13 +9,18 @@
 <div class = "space"></div>
 <div class = "space"></div>
 
+
+<h2 class="steps">FIRST STEP</h2>
 <div class="btns">
     <a href="/animal/new"><button class="btn btn-cyan">Add Animal to System</button></a>
 
 </div>
 </span>
 
-
+<br>
+<br>
+<br>
+<h2 class="steps">SECOND STEP</h2>
     <h3> Report Non-Endangered Animal Sighting </h3>
     <form action="/sighting" method="post">
         #if($animals.size() >= 0)
@@ -55,10 +60,10 @@
     </form>
 
  <div class="row style">
-    <h3>Endangered Animal Sightings</h3>
+    <h3>Endangered Animal Sightings List</h3>
 
     #if ($endangeredAnimals.size() == 0)
-    <a href="/animal/new">Add Animal to Database to Report a Sighting</a>
+    <p>No List yet! </p>
     #else
     #foreach ($endangeredAnimal in $endangeredAnimals)
    <div class="col-md-6 animals"> <a href="/endangered_animal/$endangeredAnimal.getId()" class="thumbnail">
@@ -71,9 +76,9 @@
     <br>
 </div>
  <div class="row style">
-    <h3>All Animals & Sightings</h3>
+    <h3>All Animals & Sightings List</h3>
     #if ($animals.size() == 0)
-    <a href="/animal/new">Add Animal to Database to Report a Sighting</a>
+    <p>No List yet! </p>
     #else
     #foreach ($animal in $animals)
     <div class="col-md-6 animals1"><a href="/animal/$animal.getId()" class="thumbnail">

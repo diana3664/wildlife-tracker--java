@@ -10,9 +10,13 @@
     #else
     #foreach($sighting in $endangeredAnimal.getSightings())
     Location: <strong>$sighting.getLocation()</strong>
+    <br>
     Health: $endangeredAnimal.getHealth()
+    <br>
     Age: $endangeredAnimal.getAge()
-    Reported by: $sighting.getRangerName()
+    <br>
+    Reported by: $sighting.getRanger_name()
+    <br>
     ID: $sighting.getId()
     #end
     #end

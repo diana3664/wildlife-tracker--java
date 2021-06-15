@@ -1,7 +1,7 @@
 
 
     <span id="index" style="padding-left: 300px;">
-    <h1 class="index">WILDLIFE TRACKER APPLICATIPN</h1>
+    <h1 class="index">WILDLIFE TRACKER APPLICATION</h1>
         <h3>Olla Ranger!!</h3>
         <p>The application helps you to track wildlife sighting in the area<br>It's fun and less paper work for you!</p>
         <p>The application also allows you to state if the animal on Site is endengered</p>
@@ -54,33 +54,35 @@
         #end
     </form>
 
-
+ <div class="row style">
     <h3>Endangered Animal Sightings</h3>
 
     #if ($endangeredAnimals.size() == 0)
     <a href="/animal/new">Add Animal to Database to Report a Sighting</a>
     #else
     #foreach ($endangeredAnimal in $endangeredAnimals)
-    <a href="/endangered_animal/$endangeredAnimal.getId()" class="thumbnail">
+   <div class="col-md-6 animals"> <a href="/endangered_animal/$endangeredAnimal.getId()" class="thumbnail">
         <h4>$endangeredAnimal.getName()</h4>
         <h4>$endangeredAnimal.getSightings().size() Reported Sighting(s)</h4>
-        <p>Click for details</p>
-    </a>
+        <p class="row">Click for details</p>
+    </a></div>
     #end
     #end
-
+    <br>
+</div>
+ <div class="row style">
     <h3>All Animals & Sightings</h3>
     #if ($animals.size() == 0)
     <a href="/animal/new">Add Animal to Database to Report a Sighting</a>
     #else
     #foreach ($animal in $animals)
-    <a href="/animal/$animal.getId()" class="thumbnail">
+    <div class="col-md-6 animals1"><a href="/animal/$animal.getId()" class="thumbnail">
         <h4>$animal.getName()</h4>
         <h4>$animal.getSightings().size() Reported Sighting(s)</h4>
-        <p>Click for details</p>
-    </a>
+        <p class="row">Click for details</p>
+    </a></div>
     #end
     #end
-
+</div>
 
 

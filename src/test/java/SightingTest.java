@@ -22,7 +22,7 @@ public class SightingTest {
         Animal testAnimal = new Animal("Fox");
         testAnimal.save();
         Sighting testSighting = new Sighting(testAnimal.getId(), "Zone B", "James Wait");
-        assertEquals("James Wait", testSighting.getName());
+        assertEquals("James Wait", testSighting.getRanger_name());
     }
 
     //return true if loacation and decription are the same
@@ -60,20 +60,6 @@ public class SightingTest {
         assertEquals(true, Sighting.all().get(1).equals(secondSighting));
     }
 
-    //get all
-    @Test
-    public void all_returnsAllInstancesOfMonster_true(){
-        Animal testAnimal = new Animal("Fox");
-        testAnimal.save();
-        Sighting testSighting = new Sighting(testAnimal.getId(), "Zone B", "James Wait");
-        testSighting.save();
-        Animal secondTestAnimal = new Animal("Lion");
-        secondTestAnimal.save();
-        Sighting secondSighting = new Sighting(testAnimal.getId(), "Zone c", "James Wait");
-        secondSighting.save();
-        assertEquals(true,Sighting.all().get(0).equals(testSighting));
-        assertEquals(true,Sighting.all().get(1).equals(secondSighting));
-    }
 
     //find by id
     @Test

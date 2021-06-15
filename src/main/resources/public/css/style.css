@@ -1,0 +1,73 @@
+*{
+color: white;
+
+}
+body{
+background-image: url("/images/pic.jpg");
+background-size: cover;
+height: 100%;
+background-repeat :no-repeat;
+}
+.animals{
+  border-radius: 20px;
+  padding:20px 20px 20px 20px;
+  background-color: black;
+  margin-right: 90px;
+  margin-bottom: 30px;
+  width: 250px;
+  color: black;
+  background-image: url("/images/pic.jpg");
+
+}
+
+.animals1{
+  border-radius: 20px;
+  padding:20px 20px 20px 20px;
+  background-color: black;
+  margin-right: 90px;
+  margin-bottom: 30px;
+  width: 250px;
+  color: black;
+  background-image: url("/images/pic.jpg");
+
+}
+.row{
+  color: black;
+  padding-left: 20px;
+}
+option{
+  color: black;
+
+}
+.formHeading{
+  padding-left: 350px;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.formHeading1{
+  padding-left: 350px;
+  font-weight: bold;
+}
+h1{
+color:aquamarine;
+}
+h2{
+color:aquamarine;
+}
+h3{
+color:aquamarine;
+}
+h4{
+color:aquamarine;
+}
+button{
+  color: white;
+  background-color: green ;
+
+}
+#button{
+  color: white;
+  background-color: green ;
+
+}

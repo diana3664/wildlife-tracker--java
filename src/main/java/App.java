@@ -1,10 +1,8 @@
 import spark.ModelAndView;
-import spark.template.handlebars.HandlebarsTemplateEngine;
-
+import static spark.Spark.*;
 import java.util.HashMap;
 import java.util.Map;
 
-import static spark.Spark.get;
 import static spark.Spark.*;
 
 
@@ -12,14 +10,17 @@ public class App {
     public static void main(String[] args) {
 
         staticFileLocation("/public");
+        String layout = "templates/layout.vtl";
+
 
         get("/", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             model.put("animals", Animal.all());
             model.put("endangeredAnimals", Endengered.all());
             model.put("sightings", Sighting.all());
-            return new ModelAndView(model, "index.vtl");
-        }, new HandlebarsTemplateEngine());
+            model.put("template", "templates/index.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
 
         post("/endangered_sighting", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
@@ -32,8 +33,10 @@ public class App {
             model.put("animals", Endengered.all());
             String animal = Endengered.find(animalIdSelected).getName();
             model.put("animal", animal);
-            return new ModelAndView(model, "success.vtl");
-        }, new HandlebarsTemplateEngine());
+            model.put("template", "templates/success.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+
 
         post("/sighting", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
@@ -47,8 +50,8 @@ public class App {
             String animal = Animal.find(animalIdSelected).getName();
             model.put("animal", animal);
             model.put("template", "templates/success.vtl");
-            return new ModelAndView(model, "success.vtl");
-        }, new HandlebarsTemplateEngine());
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
 
 
         get("/animal/new", (request, response) -> {
@@ -56,8 +59,9 @@ public class App {
             model.put("animals", Animal.all());
             model.put("endangeredAnimals", Endengered.all());
 
-            return new ModelAndView(model, "animalForm.vtl");
-        }, new HandlebarsTemplateEngine());
+            model.put("template", "templates/animalForm.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
 
 
         post("/animal/new", (request, response) -> {
@@ -88,19 +92,24 @@ public class App {
             Map<String, Object> model = new HashMap<String, Object>();
             Animal animal = Animal.find(Integer.parseInt(request.params("id")));
             model.put("animal", animal);
-            return new ModelAndView(model, "animal.vtl");
-        }, new HandlebarsTemplateEngine());
+            model.put("template", "templates/animal.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+
 
         get("/endangered_animal/:id", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             Endengered endangeredAnimal = Endengered.find(Integer.parseInt(request.params("id")));
             model.put("endangeredAnimal", endangeredAnimal);
-            return new ModelAndView(model, "endangered_animal.vtl");
-        }, new HandlebarsTemplateEngine());
+            model.put("template", "templates/endangered_animal.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+
 
         get("/error", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            return new ModelAndView(model, "error.hbs");
-        }, new HandlebarsTemplateEngine());
+            model.put("template", "templates/error.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
     }
 }

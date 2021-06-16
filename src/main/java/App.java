@@ -16,7 +16,7 @@ public class App {
 
 
         get("/", (request, response) -> {
-            Map<String, Object> model = new HashMap<String, Object>();
+           Map<String, Object> model = new HashMap<String, Object>();
             model.put("animals", Animal.all());
             model.put("endangeredAnimals", Endengered.all());
             model.put("sightings", Sighting.all());

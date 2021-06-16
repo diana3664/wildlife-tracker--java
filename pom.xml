@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>wild-life-tracker</groupId>
-    <artifactId>wild-life-tracker</artifactId>
+    <artifactId>wildlife-dian</artifactId>
     <version>1.0</version>
 
     <properties>
@@ -46,7 +46,13 @@
             <artifactId>sql2o</artifactId>
             <version>1.5.4</version>
         </dependency>
+        <dependency>
+            <groupId>com.apple</groupId>
+            <artifactId>AppleJavaExtensions</artifactId>
+            <version>1.4</version>
+        </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>

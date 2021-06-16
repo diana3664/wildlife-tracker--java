@@ -56,7 +56,7 @@ public class Animal implements EndengeredDao{
                     .addParameter("name", this.name)
                     .executeUpdate()
                     .getKey();
-        }
+        }catch ( Exception e){}
     }
 
     // our save() returns all() when called apon
